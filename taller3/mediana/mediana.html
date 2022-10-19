@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Promedio</title>
+</head>
+<body>
+    <header class="header">
+        <p class="header__title">CalculatorMed</p>
+        <nav>
+            <ul class="header__nav">
+                <li><a href="../moda/moda.html" target="_blank" class="header__nav-item">Moda</a></li>
+                <li><a href="#" class="header__nav-item">Ponderado</a></li>
+                <li><a href="#" class="header__nav-item">Promedio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__info">
+            <h1>Calculadora de Mediana</h1>
+            <p>Proyecto realizado en el curso práctico de JS</p>
+        </div>
+        <div class="form__container">
+            <h2>MEDIANA</h2>
+            <form action="" class="form" id="formulario">
+                <label for="listaMediana">Añade un número a la lista: </label>
+                <input type="number" id="listaNumeros">
+                <button class="form__bottom" onclick="return agregarNumero(event)">Agregar Número</button>
+                <div class="form__lista-numeros">
+                    <ul class="form__lista-style" id="listaPantalla"></ul>
+                </div>
+                <button type="submit" class="form__bottom form__bottom-margin" onclick="medianaa(event)">Calcular</button>
+                <p class="form__resultado" id="form__resultado"">
+                </p>
+            </form>
+        </div>
+        <button id="reiniciar" class="form__bottom">Reiniciar</button>
+    </main>
+    <footer class="footer">
+        <div class="Footer__info1">
+            <p>Proyecto de platzi hecho por un estudiante que nunca quiere parar de aprender</p>
+        </div>
+        <div class="footer__info2">
+            <p>Página sobre Promedio</p>
+            <p>Hecha por Julián Florez</p>
+            <a href="mailto:julianandredflorezrios@gmail.com">Correo</a>
+        </div>
+    </footer>
+    
+
+    <script src="./mediana.js"></script>
+</body>
+</html>

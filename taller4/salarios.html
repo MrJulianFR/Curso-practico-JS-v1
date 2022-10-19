@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Salarial</title>
+    <link rel="stylesheet" href="./stylesarilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__contents">          
+            <h1 class="header__name">Análisis Salarial</h1>
+        
+            <div class="header__contact">
+                <a href="mailto:julianandredflorezrios@gmail.com">Contact me</a>
+            </div>
+        </div>
+        <a href="../index.html" class="header__return"><img class="header__img" src="../assets/js-challenge-logo.png" alt=""></a>
+    </header>
+    <main class="main">
+        <section class="main__welcome">
+            <h1 class="main__welcome-title">Análisis Salarial</h1>
+            <p class="main__welcome-text">Cuarto taller del curso práctico de JS</p>
+        </section>
+        <section class="form">
+
+        
+            <form action="" class="form__container" id="form__container">
+                <label for="numbers" class="form__label">Ingresa un valor</label>
+                <input type="number" name="" id="numbers" placeholder="$2000" class="form__input">
+
+                <button onclick="agregarNumeros(event)" class="form__button button__margin">Agregar Número</button>
+
+                <p class="form__description">Calcular la médiana general o la mediana del top 10% de los valores ingresados</p>
+                <div class="form__bottoms">
+                    <button type="button" onclick="calcularMediana(event)" class="form__button">Médiana General</button>
+                    <button type="button" onclick="calcularTop10(event)" class="form__button">Médiana Top 10</button>
+                </div>
+                
+                
+                <p id="ResultP" class="resultP">RESULTADO...</p>
+                <button type="button" onclick="reinciarFormulario()" class="form__button-2">REINICIAR</button>
+            </form>
+
+            <div class="list">
+                <ol id="listNumerosPantalla">
+                </ol>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="footer">
+        <div class="footer__info">
+            <h2>¿Qué hacemos?</h2>
+            <p>Un ánalisis salarial del país, general y del top 10% de los mayores ingresos
+            </p>
+        </div>
+        <h2 class="footer__title">
+            Análisis salarial
+        </h2>
+        <div class="footer__contact">
+            <h3>Contacta con nosotros</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/jafr200.edu.co/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/jjuliann20/" target="_blank">Instagram</a></li>
+                <li><a href="mailto:julianandredflorezrios@gmail.com" target="_blank">Correo</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="./analisis.js"></script>
+</body>
+</html>

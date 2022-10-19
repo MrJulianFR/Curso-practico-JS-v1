@@ -1,0 +1,244 @@
+:root{
+    --color-yellow-dark: #ffe015;
+    --color-yellow-low: #fffb5b;
+    --color-grey: #8c8377;
+    --color-cafe: #311906;
+    --color-green: rgb(1, 158, 1);
+    --color-while: #ffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    height: 140px;
+    width: 100%;
+    background-color: var(--color-cafe);
+    
+}
+.header__contact-me{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-yellow-dark);
+}
+.header__img{
+    width: 80px;
+    height: 80px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    gap: 32px;
+
+    padding-left: 8px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    
+    background-color: var(--color-yellow-low);
+}
+.info__title-2{
+    font-size: 4rem;
+    color: var(--color-green);
+}
+.info__title{
+    font-size: 4rem;
+    color: var(--color-cafe);
+}
+.info__text{
+    font-size: 2rem;
+}
+.info__list{
+    font-size: 2rem;
+}
+/*Section #2  */
+.workshop{
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+
+    background-color: var(--color-yellow-dark);
+}
+.workshop__list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.workshop__list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+
+    padding: 30px;
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+
+
+}
+.workshop__img{
+    width: 80px;
+    height: 80px;
+}
+.workshop__taller{
+    font-size: 2rem;
+    text-align: center;
+}
+.workshop__title{
+    font-size: 2rem;
+    margin-top: 16px;
+    line-height: 16px;
+
+}
+.workshop__info{
+    margin-top: 16px;
+    font-size: 1.2rem;
+    padding-left: 8px;
+}
+
+.workshop__list-item:hover{
+    cursor: pointer;
+
+}
+
+@media (min-width: 768px){
+    .header{
+        height: 200px;
+    }
+
+    .header__img{
+        width: 120px;
+        height: 120px;
+    }
+    .header__contact-me{
+        font-size: 4.5rem;
+    }
+    .workshop__list-item{
+        gap: 60px;
+    }
+    .workshop__img{
+        width: 100px;
+        height: 100px;
+    }
+    .workshop__taller{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .workshop__title{
+        font-size: 2.8rem;
+        margin-top: 16px;
+        line-height: 16px;
+    }
+    .workshop__info{
+        margin-top: 16px;
+        font-size: 2rem;
+        padding-left: 8px;
+    }
+
+}
+@media (min-width: 1024px){
+    body{
+        display: flex;
+    }
+    .header{
+        flex-direction: column;
+        height: 100vh;
+        width: 150px;
+        justify-content: space-around;
+    }
+    .header__contact-me{
+        font-size: 3rem;
+        transform: rotate(-90deg) translate(-100px, 0px);
+    }
+    .header__img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .main{
+        flex-direction: row;
+
+        height: 100vh;
+
+        background-color: var(--color-while);
+    }
+    .info{
+        width: 60%;
+        background-color: var(--color-while);
+        padding-left: 12px;
+    }
+    .info__title-2{
+        font-size: 6rem;
+    }
+    .info__title{
+        font-size: 4.5rem;
+        margin-top: 32px;
+    }
+    .info__text{
+        margin-top: 24px;
+    }
+    .workshop{
+        width: 40%;
+        overflow: hidden;
+
+
+        border-left: 4px solid black ;
+    }
+    .workshop__list-item{
+        gap: 40px;
+        padding: 16px;
+        height: 25vh;
+
+    }
+    .workshop__img{
+        width: 100px;
+        height: 100px;
+    }
+    .workshop__taller{
+        font-size: 2rem;
+    }
+    .workshop__title{
+        font-size: 2rem;
+        line-height: 20px;
+    }
+    .workshop__info{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        padding-left: 8px;
+    }
+
+    .workshop__list-item:hover{
+        background-color: var(--color-yellow-dark);
+        color: black;
+    }
+    .workshop:hover{
+        color: black;
+        background-color: var(--color-while);
+        
+    }
+    
+}
