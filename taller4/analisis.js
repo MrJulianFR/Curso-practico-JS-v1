@@ -151,6 +151,15 @@ function calcularMediana(evt){
 //top 10: 
 
 //helpers
+function calcularPromedio(lista){
+    var sumaLista = lista.reduce(
+       function(valorAcumulado = 0, nuevoValor){
+           return valorAcumulado + nuevoValor;
+       }
+   )
+    const promedioLista = sumaLista / lista.length;
+    return promedioLista;
+}
 
  function mediana(lista){
      let mitad = parseInt(lista.length /2);
